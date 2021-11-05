@@ -1,0 +1,14 @@
+def fifth_power(num):
+    powered = 0
+    for digit in str(num):
+        powered = powered + int(digit) ** 5
+    if powered == num:
+        return num
+    else:
+        return 0
+        
+sum_numbers = 0
+for i in range(2, 1000000):
+    sum_numbers += fifth_power(i)        
+
+print(sum_numbers)
